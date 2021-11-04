@@ -1,0 +1,25 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed-dev": "psql -f db/seed-dev.sql",
+    "seed-test": "psql -f db/seed-test.sql",
+    "dev": "nodemon listen.js",
+    "test": "npm run seed-test && jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
+    "supertest": "^6.1.6"
+  }
+}
